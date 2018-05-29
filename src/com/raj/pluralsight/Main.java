@@ -36,5 +36,16 @@ public class Main {
     mathEquationOverload2.execute(leftDouble, rightInt);
     System.out.println(mathEquationOverload2.getResult());
 
+    System.out.println("********Using Inheritance********");
+    CalculateBase calculateBases[] = {
+        new Divider(100, 50),
+        new Adder(33, 54),
+        new Subtractor(74, 39),
+        new Multiplier(11, 3)
+    };
+    for (CalculateBase calculateBase : calculateBases) {
+      calculateBase.calculate();
+      System.out.println("Result = " + calculateBase.getResult());
+    }
   }
 }
