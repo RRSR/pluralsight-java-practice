@@ -4,10 +4,11 @@ public class Main {
 
   public static void main(String[] args) {
 
-    /*MathEquation mathEquation = new MathEquation();
-    mathEquation.execute();
-    System.out.println(mathEquation.getResult());*/
+    /*useMathEquation();
+    useCalculateBase();*/
+  }
 
+  public static void useMathEquation() {
     MathEquation[] mathEquations = new MathEquation[4];
     mathEquations[0] = new MathEquation(100, 50, 'd');
     mathEquations[1] = new MathEquation(39, 18, 's');
@@ -35,7 +36,9 @@ public class Main {
     MathEquation mathEquationOverload2 = new MathEquation('d');
     mathEquationOverload2.execute(leftDouble, rightInt);
     System.out.println(mathEquationOverload2.getResult());
+  }
 
+  public static void useCalculateBase() {
     System.out.println("********Using Inheritance********");
     CalculateBase calculateBases[] = {
         new Divider(100, 50),
