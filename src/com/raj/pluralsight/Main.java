@@ -6,6 +6,19 @@ public class Main {
 
     /*useMathEquation();
     useCalculateBase();*/
+
+    String statements[] = {
+        "divide 100.0 50.0",
+        "add 25.0 92.0",
+        "subtract 225.0 17.0",
+        "multiply 11.0 3.0"
+    };
+
+    CalculateHelper calculateHelper = new CalculateHelper();
+    for (String statement : statements) {
+      calculateHelper.process(statement);
+      System.out.println(calculateHelper.toString());
+    }
   }
 
   public static void useMathEquation() {
