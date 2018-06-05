@@ -1,4 +1,4 @@
-package com.raj.pluralsight;
+package com.raj.pluralsight.calcengine;
 
 /**
  * Created by Raj Rathore on 29-May-18
@@ -8,7 +8,7 @@ public class Adder extends CalculateBase {
   public Adder() {
   }
 
-  Adder(double leftVal, double rightVal) {
+  public Adder(double leftVal, double rightVal) {
     super(leftVal, rightVal);
   }
 

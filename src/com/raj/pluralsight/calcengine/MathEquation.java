@@ -1,9 +1,9 @@
-package com.raj.pluralsight;
+package com.raj.pluralsight.calcengine;
 
 /**
  * Created by Raj Rathore on 26-May-18
  */
-class MathEquation {
+public class MathEquation {
 
   private double leftVal;
   private double rightVal;
@@ -13,11 +13,11 @@ class MathEquation {
   public MathEquation() {
   }
 
-  MathEquation(char opCode) {
+  public MathEquation(char opCode) {
     this.opCode = opCode;
   }
 
-  MathEquation(double leftVal, double rightVal, char opCode) {
+  public MathEquation(double leftVal, double rightVal, char opCode) {
     this(opCode);
     this.leftVal = leftVal;
     this.rightVal = rightVal;
@@ -35,11 +35,11 @@ class MathEquation {
     this.opCode = opCode;
   }
 
-  double getResult() {
+  public double getResult() {
     return result;
   }
 
-  void execute() {
+  public void execute() {
     switch (opCode) {
       case 'a':
         result = leftVal + rightVal;
@@ -59,7 +59,7 @@ class MathEquation {
     }
   }
 
-  void execute(double leftVal, double rightVal) {
+  public void execute(double leftVal, double rightVal) {
     this.leftVal = leftVal;
     this.rightVal = rightVal;
     execute();

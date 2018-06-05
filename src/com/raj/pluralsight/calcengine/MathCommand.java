@@ -1,9 +1,9 @@
-package com.raj.pluralsight;
+package com.raj.pluralsight.calcengine;
 
 /**
  * Created by Raj Rathore on 31-May-18
  */
-public enum MathCommand {
+enum MathCommand {
   Add,
   Subtract,
   Multiply,

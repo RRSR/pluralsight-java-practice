@@ -1,4 +1,4 @@
-package com.raj.pluralsight;
+package com.raj.pluralsight.calcengine;
 
 /**
  * Created by Raj Rathore on 31-May-18
@@ -16,7 +16,7 @@ public class CalculateHelper {
   private double result;
 
 
-  void process(String statement) throws InvalidStatementException {
+  public void process(String statement) throws InvalidStatementException {
     String[] parts = statement.split(" ");
     if (parts.length != 3) {
       throw new InvalidStatementException("Incorrect number of fields", statement);

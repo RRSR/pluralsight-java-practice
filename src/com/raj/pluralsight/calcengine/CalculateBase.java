@@ -1,4 +1,4 @@
-package com.raj.pluralsight;
+package com.raj.pluralsight.calcengine;
 
 /**
  * Created by Raj Rathore on 29-May-18
@@ -35,7 +35,7 @@ public abstract class CalculateBase {
     this.rightVal = rightVal;
   }
 
-  double getResult() {
+  public double getResult() {
     return result;
   }
 
