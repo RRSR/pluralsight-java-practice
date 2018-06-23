@@ -14,8 +14,12 @@ public class Main {
   public static void main(String[] args) {
 
     /*useMathEquation();
-    useCalculateBase();*/
+    useCalculateBase();
+    useCalculateHelper();*/
 
+  }
+
+  public static void useCalculateHelper() {
     String statements[] = {
         "add 1.0",
         "add xx 92.0",
@@ -37,7 +41,6 @@ public class Main {
           System.out.println("Original Exception : " + e.getCause().getMessage());
         }
       }
-
     }
   }
 
